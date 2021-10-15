@@ -10,6 +10,6 @@
 
 6. Code  
 
-6.1. Create an enviroment 
+    6.1. Create an enviroment 
 
 
