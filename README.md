@@ -10,6 +10,11 @@ Technic challenge Platzi Master
 ![](apalabrados_flowchart.drawio.svg)
 
 
+# Architecture App
+
+![](app.drawio.svg)
+
+
 # Deploy
 
 
