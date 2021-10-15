@@ -7,3 +7,8 @@
 4. Learn how to connect MongoDB with Flask:
     [Pythonbasics tutorial](https://pythonbasics.org/flask-mongodb/)
 5. Architecture App diagram: [drawio](https://app.diagrams.net/)
+
+6. Code
+6.1. Create an enviroment 
+
+
