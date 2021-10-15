@@ -35,6 +35,13 @@
     ```pip freeze > requirements.txt```
 
 
+    6.7 Create App
+
+     Create database in mongodb
+
+    6.8 Install mongo create data base and conect with app
+    pip3 install Flask-PyMongo
+
 
 
 
