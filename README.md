@@ -1,5 +1,6 @@
-# apalabrados
+# Apalabrados
 Technic challenge Platzi Master
+
 
 
 
@@ -7,3 +8,13 @@ Technic challenge Platzi Master
 
 
 ![](apalabrados_flowchart.drawio.svg)
+
+
+# Deploy
+
+
+# Download
+
+
+
+```pip3 install -r requirements.txt```
