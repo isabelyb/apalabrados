@@ -10,6 +10,31 @@
 
 6. Code  
 
-    6.1. Create an enviroment 
+    6.1. Create an environment 
+
+    ```virtualenv venv```
+    Activate environment
+    ```source venv/bin/activate```
+
+    6.2. Install Flask
+    ```pip3 install Flask```
+    
+    6.3 Create file start.py to start app
+
+    6.4. Establecer variable de entorno de la línea de comando
+    ```export FLASK_APP=start.py```
+
+    6.5. Strart debugger = on
+    ```export FLASK_DEBUG=1```
+
+    6.5. Run Flask
+        ```flask run```
+
+        generating requirements
+
+    ```pip freeze > requirements.txt```
+
+
+
 
 
