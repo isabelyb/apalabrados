@@ -37,11 +37,15 @@
 
     6.7 Create App
 
+    6.7 Create Templates
+
      Create database in mongodb
 
     6.8 Install mongo create data base and conect with app
     pip3 install Flask-PyMongo
 
+
+make to input is saved in mongodb (without classifier)
 
 
 
