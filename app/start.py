@@ -16,6 +16,7 @@ URL = "mongodb+srv://isabely:cohorte8@cluster0.k2xgf.mongodb.net/apalabrados_dbr
 client = pymongo.MongoClient(URL)
 db = client.get_database('apalabrados_db')
 
+
 @app.route('/', methods=['POST'])
 def save_input():
     input = request.form
