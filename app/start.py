@@ -24,6 +24,20 @@ def save_input():
     db.NUMBERS.insert_one({'number': data})
     return redirect(url_for('submit')) 
 
+######## Get from mongo ####
+
+@app.route('/data/numbers')
+def last_id():
+    current_id = db.NUMBERS.find().sort('_id', -1).limit(1)[0]['_id'];
+    last_number = db.NUMBERS.find().sort('_id', -1).limit(1)[1]["number"];
+    current_number = db.NUMBERS.find().sort('_id', -1).limit(1)[0]["number"];
+    acummulated = int(last_number) + int(current_number)
+    print(acummulated)
+    db.NUMBERS.update({'_id':current_id},{'number': current_number,'accumulated':acummulated},upsert=True)
+    return render_template('numbers.html')
+
+
+############################
 
 @app.route('/data/submit')
 def submit():    
@@ -34,7 +48,6 @@ def submit():
 def data(table):
     template = f'{table}.html'
     return render_template(template, table=table)
-
 
 
 if __name__ == '__main__':

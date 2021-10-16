@@ -47,5 +47,13 @@
 
 make to input is saved in mongodb (without classifier)
 
+create clasifier function
+
+get data from mongo db
+
+accumulated numbers
+
+post acumulated in accumulated column !!
+
 
 
