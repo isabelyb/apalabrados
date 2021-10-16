@@ -3,24 +3,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Apalabrados|numbers</title>
+    <title>Apalabrados</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 </head>
 <body>
 
 <div>
 
-    <p><a href="submit">Regresar</a></p>
+    <h1>Your input have been saved</h1>
 
-    {% block content %}
-  
-    <p><a href={{ url_for('start') }}>Home</a></p>
+    <h1>What database do you want to watch</h1>
 
-    {% endblock %}
 
-    <h1>Table {{table}}!</h1>
+    <p><a href="numbers">Numbers Table</a></p>
 
-    <p>Data numbers</p>
+    <p><a href="text">Text table</a></p>
+
+    <p><a href="character">Character Table</a></p>
 
 </div>
 

@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_pymongo import pymongo
-from app import app
+from start import app
+
 
 
 CONNECTION_STRING = "mongodb+srv://isabely:cohorte8@cluster0.k2xgf.mongodb.net/apalabrados_dbretryWrites=true&w=majority"
