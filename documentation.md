@@ -55,5 +55,7 @@ accumulated numbers
 
 post acumulated in accumulated column !!
 
+post all data in the collection of bd in mongo
+
 
 

@@ -17,21 +17,37 @@ client = pymongo.MongoClient(URL)
 db = client.get_database('apalabrados_db')
 
 
+# @app.route('/', methods=['POST'])
+# def save_input():
+#     input = request.form
+#     data = input['text']
+#     db.NUMBERS.insert_one({'number': data})
+#     return redirect(url_for('submit')) 
+
+
 @app.route('/', methods=['POST'])
 def save_input():
     input = request.form
     data = input['text']
-    db.NUMBERS.insert_one({'number': data})
+    if data.isnumeric() == True:
+        db.NUMBERS.insert_one({'number': data})       
+    elif data.isalnum() == False:
+        # I have to raecognize tildes 
+        data = ''.join([data[i] for i in range(0, len(data)) if data[i].isalnum() == False])
+        db.CHARACTERS.insert_one({'character': data}) 
+    else:
+        db.TEXT.insert_one({'character':data,'initial':data[0],'final':data[-1]})
     return redirect(url_for('submit')) 
 
 ######## Get from mongo ####
 
 @app.route('/data/numbers')
-def last_id():
+def accumulate():
     current_id = db.NUMBERS.find().sort('_id', -1).limit(1)[0]['_id'];
-    last_number = db.NUMBERS.find().sort('_id', -1).limit(1)[1]["number"];
-    current_number = db.NUMBERS.find().sort('_id', -1).limit(1)[0]["number"];
-    acummulated = int(last_number) + int(current_number)
+    last_number = db.NUMBERS.find().sort('_id', -1).limit(1)[1]['number'];
+    current_number = db.NUMBERS.find().sort('_id', -1).limit(1)[0]['number'];
+    # Is tha las accumulate value
+    # acummulated = int(last_number) + int(current_number)
     print(acummulated)
     db.NUMBERS.update({'_id':current_id},{'number': current_number,'accumulated':acummulated},upsert=True)
     return render_template('numbers.html')
