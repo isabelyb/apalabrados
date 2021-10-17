@@ -8,24 +8,31 @@ app = create_app()
 
 
 @app.route('/')
-def start():
+def index():
     return render_template('index.html')
-
-
-@app.route('/data/submit')
-def submit():    
-    return render_template('submit.html')
-
-
-@app.route('/data/<table>')
-def data(table):
-    template = f'{table}.html'
-    return render_template(template, table=table)
-
 
 URL = "mongodb+srv://isabely:cohorte8@cluster0.k2xgf.mongodb.net/apalabrados_dbretryWrites=true&w=majority"
 client = pymongo.MongoClient(URL)
 db = client.get_database('apalabrados_db')
+
+ndb = db.NUMBERS.find({},{'number':1, 'accumulated':1,'_id':0})
+df = pd.DataFrame.from_dict(ndb)
+
+
+num_data = df.to_html(index=False)
+
+
+@app.route('/submit')
+def submit():
+
+    context = {
+        'variable':'Mariu',
+        'titles': ['Na','NUMBERS','TEXT','CHARACTER'],
+        'tables': num_data
+    }    
+    return render_template('submit.html', **context)
+
+
 
 ascii_text = list(range(48, 58)) + list(range(65,91)) + list(range(97,123)) + [164,165]
 
@@ -53,17 +60,6 @@ def accumulate():
     db.NUMBERS.update({'_id':current_id},{'number': current_number,'accumulated':acummulated},upsert=True)
     return render_template('numbers.html')
 
-###Tables###
-
-
-ndb = db.NUMBERS.find({},{'number':1, 'accumulated':1,'_id':0})
-df = pd.DataFrame.from_dict(ndb)
-num_table = df.to_html()
-print(num_table)
-
-
-    #return render_template('numbers.html',tables=[table.to_html(classes='numbers')], 
-     #                       titles = ['numbers db'])
 
 
 if __name__ == '__main__':

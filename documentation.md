@@ -22,7 +22,7 @@
     6.3 Create file start.py to start app
 
     6.4. Establecer variable de entorno de la línea de comando
-    ```export FLASK_APP=start.py```
+    ```export FLASK_APP=main.py```
 
     6.5. Strart debugger = on
     ```export FLASK_DEBUG=1```

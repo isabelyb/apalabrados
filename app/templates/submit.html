@@ -10,17 +10,38 @@
 
 <div>
 
+    {% block content %}
+  
+    <p><a href={{ url_for('index') }}>Home</a></p>
+
+    {% endblock %}
+
+    <p>Hola {{variable}} Weee </p>
+
+  
     <h1>Your input have been saved</h1>
 
-    <h1>What database do you want to watch</h1>
+
+ <div class="container">
+    <table>
+       <td>
+        {{tables | safe}}
+       </td>
+       <td>
+        
+        {{tables | safe}}
+        
+       </td>
+       <td>
+        
+        {{tables | safe}}
+        
+       </td>
+    </table>
+ </div>
 
 
-    <p><a href="numbers">Numbers Table</a></p>
-
-    <p><a href="text">Text table</a></p>
-
-    <p><a href="character">Character Table</a></p>
-
+ 
 </div>
 
 </body>
