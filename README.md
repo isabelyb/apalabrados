@@ -17,6 +17,8 @@ Technic challenge Platzi Master
 
 # Deploy
 
+Made in [Herohu](https://apalabrados-isabely.herokuapp.com/)
+
 
 # Download
 
