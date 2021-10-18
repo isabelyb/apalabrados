@@ -63,5 +63,16 @@ modules
 
 format html
 
+ Deploy
+
+https://apalabrados-isabely.herokuapp.com/
 
 
+Version Python
+
+procfile
+
+runtime
+
+
+Cli
