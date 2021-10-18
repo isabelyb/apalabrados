@@ -1,6 +1,4 @@
 from flask import Flask, render_template
-# from app import create_app
-#from app.mongo_db import mongodb, accumulate, save_input, tables
 from mongo_db import mongodb, accumulate, save_input, tables
 
 def create_app():
@@ -34,4 +32,3 @@ def submit():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
