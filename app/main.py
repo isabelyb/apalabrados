@@ -1,6 +1,11 @@
 from flask import Flask, render_template
-from app import create_app
-from app.mongo_db import mongodb, accumulate, save_input, tables
+# from app import create_app
+#from app.mongo_db import mongodb, accumulate, save_input, tables
+from mongo_db import mongodb, accumulate, save_input, tables
+
+def create_app():
+    app = Flask(__name__)
+    return app
 
 
 app = create_app()
