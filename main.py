@@ -16,7 +16,7 @@ def data():
     return save_input()
 
 
-@app.route('/submit')
+@app.route('/submit', methods=['GET'])
 def submit():    
     context = {
         'titles': ['NUMBERS','TEXT','CHARACTER'],
