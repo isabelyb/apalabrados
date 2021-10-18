@@ -32,7 +32,7 @@
 
         generating requirements
 
-    ```pip freeze > requirements.txt```
+    ```pip3 freeze > requirements.txt```
 
 
     6.7 Create App
