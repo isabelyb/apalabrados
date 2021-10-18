@@ -10,6 +10,7 @@ app = create_app()
 db = mongodb()
 
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
