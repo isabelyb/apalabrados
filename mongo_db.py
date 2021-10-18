@@ -2,11 +2,13 @@ from flask import Flask, request, redirect, url_for
 from flask_pymongo import pymongo
 import pandas as pd
 
+
 def mongodb():
     URL = "mongodb+srv://isabely:cohorte8@cluster0.k2xgf.mongodb.net/apalabrados_dbretryWrites=true&w=majority"
     client = pymongo.MongoClient(URL)
     db = client.get_database('apalabrados_db')
     return db
+
 
 db = mongodb() 
 
@@ -38,7 +40,7 @@ def accumulate():
 def tables():
     numbers_db = db.NUMBERS.find({},{'Number':1, 'Accumulated':1,'_id':0})
     df_num = pd.DataFrame.from_dict(numbers_db)
-    num_data = df_num.to_html(index=False)
+    num_data = df_num.to_html(index=False, justify='center')
 
     text_db = db.TEXT.find({},{'Text':1,'Initial':1,'Final':1,'_id':0})
     df_text = pd.DataFrame.from_dict(text_db)
@@ -46,7 +48,7 @@ def tables():
 
     char_db = db.CHARACTERS.find({},{'Character':1,'_id':0})
     df_char = pd.DataFrame.from_dict(char_db)
-    char_data = df_char.to_html(index=False)
+    char_data = df_char.to_html(index=False, justify='center',col_space='150px')
 
     tables = [num_data, text_data, char_data]
 

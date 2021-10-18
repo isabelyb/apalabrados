@@ -7,23 +7,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-
-<div>
-
-    <h1>Wellcome to Apalabrados</h1>
-
-
-    <h3>Description</h3>
-
-
-    <p>Type your input</p>
-
-    <form method="POST">
-        <input name="text">
-        <input type="submit">
-    </form>
-    
-</div>
-
+    <img src="{{url_for('static', filename='images/words.jpg')}}" alt="Words">
+    <div>
+        <h1>Wellcome to Apalabrados</h1>
+        &nbsp;
+        <p>Apalabrados is a nice database to save the user input and store it according to the data type.</p>
+        &nbsp;
+        <h3>Try your input!</h3>
+        <form method="POST">
+            <input name="text">
+            <input type="submit" style="width: 80px">
+        </form>
+    </div>
 </body>
 </html>

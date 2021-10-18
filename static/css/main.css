@@ -1,4 +1,19 @@
 td { 
     margin: 20px; 
-    padding: 10px;
+    padding: 8px;
+    vertical-align: top;
   } 
+
+html * {
+    font-family: Helvetica;
+}
+
+img {
+    width: 500px;
+    height: 120px;
+}
+
+input{
+    width: 300px;
+    height: 20px;
+}

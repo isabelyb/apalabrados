@@ -3,12 +3,7 @@ from mongo_db import mongodb, accumulate, save_input, tables
 
 
 app = Flask(__name__)
-
-
-
-
 db = mongodb()
-
 
 
 @app.route('/')
@@ -24,7 +19,6 @@ def data():
 @app.route('/submit')
 def submit():    
     context = {
-        'variable':'Mariu',
         'titles': ['NUMBERS','TEXT','CHARACTER'],
         'tables': tables()
     }    
