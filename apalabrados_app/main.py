@@ -1,12 +1,12 @@
 from flask import Flask, render_template
 from mongo_db import mongodb, accumulate, save_input, tables
 
-def create_app():
-    app = Flask(__name__)
-    return app
+
+app = Flask(__name__)
 
 
-app = create_app()
+
+
 db = mongodb()
 
 
