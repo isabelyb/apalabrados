@@ -59,5 +59,9 @@ post all data in the collection of bd in mongo
 
 get table in html from mongo db
 
+modules
+
+format html
+
 
 
