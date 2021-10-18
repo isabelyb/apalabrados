@@ -4,43 +4,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Apalabrados</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
 
-<div>
+    <div>
+        {% block content %}
+    
+        <p><a href={{ url_for('index') }}>Home</a></p>
 
-    {% block content %}
-  
-    <p><a href={{ url_for('index') }}>Home</a></p>
+        {% endblock %}
 
-    {% endblock %}
+        <p>Hola {{variable}} Weee </p>
 
-    <p>Hola {{variable}} Weee </p>
-
-  
-    <h1>Your input have been saved</h1>
-
-
- <div class="container">
-    <table>
-       <td>
-        <h2> {{titles[0]}} </h2>
-        {{tables[0] | safe}}
-       </td>
-       <td>
-        <h2> {{titles[1]}} </h2>
-        {{tables[1] | safe}}        
-       </td>
-       <td>
-        <h2> {{titles[2]}} </h2>
-        {{tables[2] | safe}}        
-       </td>
-    </table>
- </div>
+    
+        <h1>Your input have been saved</h1>
 
 
- 
+    <div class="container">
+        <table>
+        <td style="margin: 10px; padding: 20px; vertical-align: top;">
+            <h2> {{titles[0]}} </h2>
+            {{tables[0] | safe}}
+        </td>
+        <td style="margin: 10px; padding: 20px; vertical-align: top;">  
+            <h2> {{titles[1]}} </h2>
+            {{tables[1] | safe}}        
+        </td>
+        <td style="margin: 10px; padding: 20px; vertical-align: top;">  
+            <h2> {{titles[2]}} </h2>
+            {{tables[2] | safe}}        
+        </td>
+        </table>
+    </div>
 </div>
 
 </body>
