@@ -5,18 +5,14 @@
 * **Text:** It saves your input and its first and last character.
 * **Special characters:** It saves it from your input, only the special characters.
 
-**Apalabrados** is part of challenge of diagnostic in Platzi Master Cohort[8].
+This Web App is part of challenge of diagnostic in Platzi Master Cohort[8].
 
 ## How to use it
 
-**Step 1:** go to [Home](https://apalabrados-isabely.herokuapp.com/) and insert and input you want.
+* **Step 1:** go to [Home](https://apalabrados-isabely.herokuapp.com/) and insert and input you want.![home](/assets/home.jpg)
 
-![home](/assets/home.jpg)
-
-**Step 2:** When you have submitted an input **Apalabrados** redirect to app [response](https://apalabrados-isabely.herokuapp.com/submit).
-There you can see the result of database that is saved and proceced yhe input according to the data type. 
-
-![submit](/assets/submit.jpg)
+* **Step 2:** When you have submitted an input **Apalabrados** redirect to app [response](https://apalabrados-isabely.herokuapp.com/submit).
+There you can see the result of database that is saved and proceced yhe input according to the data type. ![submit](/assets/submit.jpg)
 
 You could go to back to the home and try the times you want!
 
@@ -25,23 +21,25 @@ You could go to back to the home and try the times you want!
 To develop this app I followed this steps in its order.
 
 1. Made a github [repository](https://github.com/isabelyb/apalabrados).
-2. Made a first version of the process with data flowchart. Then I have to adjust some details i nthe develop app process. I use [drawio](https://app.diagrams.net/) to do it.
-    ![data_process](/assets/apalabrados_flowchart.drawio.svg)
-3. How I feel more comfortable with Python, I looked for a better way to do a Web App using it. I found the more efficient tool was Flask, so I learned from zero how to do it.
+2. Made a first version of the process with data flowchart. Then I have to adjust some details i nthe develop app process. ![data_process](/assets/apalabrados_flowchart.drawio.svg)
+4. How I feel more comfortable with Python, I looked for a better way to do a Web App using it. I found the more efficient tool was Flask, so I learned from zero how to do it.
 I read a lot of sources, these were the most helpful for me:
     * [Platzi](https://platzi.com/clases/flask/)
     * [Documentation](https://palletsprojects.com/p/flask/)
     * [Pythonise tutorial](https://pythonise.com/series/learning-flask/flask-application-structure)
     * [python-adv-web-apps](https://python-adv-web-apps.readthedocs.io/en/latest/flask.html)
-4. Made a first version of the App structure. As the _proces data flowchart_ I have to adjust some details in the develop app process. Too, I use [drawio](https://app.diagrams.net/) to do it.
-    ![app_structure](/assets/app.drawio.svg)
+4. Made a first version of the App structure. As the _proces data flowchart_ I have to adjust some details in the develop app process. Too, I use [drawio](https://app.diagrams.net/) to do it.![app_structure](/assets/app.drawio.svg)
 5. Looked for learning about how to connect MongoDB with a Flask App. Some time ago I have learned about some basics from mongo in [Platzi](https://platzi.com/clases/mongodb/).
     [Mongodb](https://docs.mongodb.com/)
     [Pythonbasics tutorial](https://pythonbasics.org/flask-mongodb/)
 6. Code! _By the way, my computer runs Ubuntu 20.04._
+    &nbsp;    
     6.1. Create a virtual environment: ```virtualenv venv``` -> ```source venv/bin/activate```
+    &nbsp;
     6.2. Install Flask: ```pip3 install Flask```
+    &nbsp;
     6.3. Create file main.py in order to start my web app.
+    &nbsp;
     6.4. Config environment variables from the command line.
         ```export FLASK_APP=main.py``` -> Define to run Web App from main.py
         ```export FLASK_DEBUG=1```     -> Turn the debugger on to follow the Web App development.
