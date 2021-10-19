@@ -37,17 +37,29 @@ I read a lot of sources, these were the most helpful for me:
     6.1. Create a virtual environment: ```virtualenv venv``` -> ```source venv/bin/activate```
     &nbsp;
     6.2. Install Flask: ```pip3 install Flask```
+    
     &nbsp;
+    
     6.3. Create file main.py in order to start my web app.
+    
     &nbsp;
+    
     6.4. Config environment variables from the command line.
         ```export FLASK_APP=main.py``` -> Define to run Web App from main.py
         ```export FLASK_DEBUG=1```     -> Turn the debugger on to follow the Web App development.
+    &nbsp;
+    
     6.5. Run Flask to try the Web App: ```flask run```
     6.6. Saved requirements.txt. Update every tool installation: ```pip3 freeze > requirements.txt```
+    &nbsp;
+    
     6.7. Create database in mongodb:
         [mongo_db](/assets/mongo_db.jpg)
+    &nbsp;
+    
     6.8. Install Flask-PyMongo and conect database with the Web App.
+    &nbsp;
+    
     6.9. Create the Python code to manage data from the user Input with Mongodb. I used pandas too, to do it.
         1. Methods POST and GET to send and get data with Web App from mongodb.
         2. Create a classifier function to save all data in the right mongo collection according to the datatype.
