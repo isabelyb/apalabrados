@@ -1,36 +1,44 @@
 # Apalabrados
 
- Description whay and how
+**Apalabrados** is a nice database to save the user input and store it according to the data type.
+* Numbers: It saves your input and accumulates with the last accumulated.
+* Text: It saves your input and its first and last character.
+* Special characters: It saves it from your input, only the special characters.
 
+**Apalabrados** is part of challenge of diagnostic in Platzi Master Cohort[8].
+
+## How to use it
+
+**Step 1:** go to [Home](https://apalabrados-isabely.herokuapp.com/) and insert and input you want.
+
+![home]()
+
+**Step 2:** When you have submitted an input **Apalabrados** redirect to app [response](https://apalabrados-isabely.herokuapp.com/submit).
+There you can see the result of database that is saved and proceced yhe input according to the data type. 
+
+![submit]()
+
+You could go to back to the home and try the times you want!
 
 ## How to I made it
 
+To develop this app I followed this steps in its order.
 
-1. Make a github [repository](https://github.com/isabelyb/apalabrados) 
-2. Logic flowchart: [drawio](https://app.diagrams.net/)
-
-
-#### Flowchart
-
-
-![](apalabrados_flowchart.drawio.svg)
-
-
-#### Architecture App
-
-![](app.drawio.svg)
-
-
-3. Learn Flask: 
+1. Make a github [repository](https://github.com/isabelyb/apalabrados).
+2. Make a first version of the process with data flowchart. Then I have to adjust some details i nthe develop app process. I use [drawio](https://app.diagrams.net/) to do it.
+    ![](/assets/apalabrados_flowchart.drawio.svg)
+3. How I feel more comfortable with Python, I looked for a better way to do a Web App using it. I found the more efficient tool was Flask, so I learned from zero how to do it.
+I read a lot of sources, these were the most helpful for me:
     * [Platzi](https://platzi.com/clases/flask/)
     * [Documentation](https://palletsprojects.com/p/flask/)
     * [Pythonise tutorial](https://pythonise.com/series/learning-flask/flask-application-structure)
-4. Learn how to connect MongoDB with Flask:
+    * [python-adv-web-apps](https://python-adv-web-apps.readthedocs.io/en/latest/flask.html)
+4. Make a first version of the App structure. As the _proces data flowchart_ I have to adjust some details in the develop app process. Too, I use [drawio](https://app.diagrams.net/) to do it.
+    ![](app.drawio.svg)
+5. Looking and learn about how to connect MongoDB with a Flask App. Some time ago I have learned about some basics from mongo in [Platzi](https://platzi.com/clases/mongodb/).
+    [Mongodb](https://docs.mongodb.com/)
     [Pythonbasics tutorial](https://pythonbasics.org/flask-mongodb/)
-5. Architecture App diagram: [drawio](https://app.diagrams.net/)
-
-6. Code  
-
+6. Code!
     6.1. Create an environment 
 
     ```virtualenv venv```
@@ -84,30 +92,24 @@ modules
 
 format html
 
- Deploy
 
-https://apalabrados-isabely.herokuapp.com/
+# Deploy
 
-
+Made in [Herohu](https://apalabrados-isabely.herokuapp.com/)
+Cli
 Version Python
 
 procfile
 
 runtime
 
-
-Cli
-
-
-# Deploy
-
-Made in [Herohu](https://apalabrados-isabely.herokuapp.com/)
-
-
+I was so happy for this. This is my first App complet from zero to deploy.
 
 ```pip3 install -r requirements.txt```
 
-# Download
+##  Instructions to Download
+
+
 
 
 
