@@ -34,37 +34,31 @@ I read a lot of sources, these were the most helpful for me:
     [Pythonbasics tutorial](https://pythonbasics.org/flask-mongodb/)
 6. Code! _By the way, my computer runs Ubuntu 20.04._
     &nbsp;    
-    6.1. Create a virtual environment: ```virtualenv venv``` -> ```source venv/bin/activate```
-    &nbsp;
-    6.2. Install Flask: ```pip3 install Flask```
+    6.1. Create a virtual environment: ```virtualenv venv``` -> ```source venv/bin/activate```. 
     
-    &nbsp;
+    6.2. Install Flask: ```pip3 install Flask``` 
     
     6.3. Create file main.py in order to start my web app.
-    
-    &nbsp;
     
     6.4. Config environment variables from the command line.
         ```export FLASK_APP=main.py``` -> Define to run Web App from main.py
         ```export FLASK_DEBUG=1```     -> Turn the debugger on to follow the Web App development.
-    &nbsp;
     
-    6.5. Run Flask to try the Web App: ```flask run```
+    6.5. Run Flask to try the Web App: ```flask run``` 
+    
     6.6. Saved requirements.txt. Update every tool installation: ```pip3 freeze > requirements.txt```
     &nbsp;
     
     6.7. Create database in mongodb:
-        [mongo_db](/assets/mongo_db.jpg)
-    &nbsp;
+        [mongo_db](/assets/mongo_db.jpg) 
+        
+    6.8. Install Flask-PyMongo and conect database with the Web App. 
     
-    6.8. Install Flask-PyMongo and conect database with the Web App.
-    &nbsp;
-    
-    6.9. Create the Python code to manage data from the user Input with Mongodb. I used pandas too, to do it.
-        1. Methods POST and GET to send and get data with Web App from mongodb.
-        2. Create a classifier function to save all data in the right mongo collection according to the datatype.
-        3. Create a function to get updated data from mongo and render in HTML table to show in the Web App. I use [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html) to do it.
-        5. Last details in basic HTML with code to show the information in the Web App. I use the [Jinja Templates](https://jinja.palletsprojects.com/en/3.0.x/templates/) to do this.
+    6.9. Create the Python code to manage data from the user Input with Mongodb. I used pandas too, to do it. 
+    * Methods POST and GET to send and get data with Web App from mongodb.
+    * Create a classifier function to save all data in the right mongo collection according to the datatype.
+    * Create a function to get updated data from mongo and render in HTML table to show in the Web App. I use [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html) to do it. 
+    * Last details in basic HTML with code to show the information in the Web App. I use the [Jinja Templates](https://jinja.palletsprojects.com/en/3.0.x/templates/) to do this.
 
 
 ## Deploy in [HEROKU](https://www.heroku.com/)
@@ -75,7 +69,9 @@ I read a lot of sources, these were the most helpful for me:
 4. Made the integration of my GitHub repository [with Heroku](https://devcenter.heroku.com/articles/github-integration).
 
 My Web App was deployed and I felt so happy for this. 
-        [deploy](/assets/deploy.jpg)
+
+![deploy](/assets/deploy.jpg) 
+        
 This is my first App complet from zero to deploy.
 
 
@@ -87,7 +83,7 @@ Finally I finished to write the README.md file.
 
 This is a brief guide, You should adapt it to your own software requirements.
 
-1. In the [Aplabrados Repo](https://github.com/isabelyb/apalabrados), go to download zip file:
+1. In the [Apalabrados Repo](https://github.com/isabelyb/apalabrados), go to download zip file:
 
 ![download](/assets/download.jpg)
  
