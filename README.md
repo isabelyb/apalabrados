@@ -88,13 +88,20 @@ Finally I finished to write the README.md file.
 This is a brief guide, You should adapt it to your own software requirements.
 
 1. In the [Aplabrados Repo](https://github.com/isabelyb/apalabrados), go to download zip file:
-        ![download](/assets/download.jpg)
+
+![download](/assets/download.jpg)
+ 
+
 2. Extract file.
-3. From command line, in the app root create a virtual enviroment.
-4. Inside **venv** install Web App requirements: ```pip3 install -r requirements.txt```
+ 
+3. From command line, in the app root create a virtual enviroment. 
+
+4. Inside **venv** install Web App requirements: ```pip3 install -r requirements.txt``` 
+
 5. To run in local: 
     5.1. Config environment variables from the command line: ```export FLASK_APP=main.py``` and ```export FLASK_DEBUG=1```
-    5.2. Run Flask to try the Web App: ```flask run```
+    5.2. Run Flask to try the Web App: ```flask run``` 
+ 
 6. To **deploy in Heroku** go to the website instructions [here](https://devcenter.heroku.com/articles/getting-started-with-python).
 
 
