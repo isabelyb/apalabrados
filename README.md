@@ -20,7 +20,7 @@ You could go to back to the home and try the times you want!
 
 To develop this app I followed this steps in its order.
 
-1. Made a github [repository](https://github.com/isabelyb/apalabrados).
+1. Start a github [repository](https://github.com/isabelyb/apalabrados).
 2. Made a first version of the process with data flowchart. Then I have to adjust some details i nthe develop app process. ![data_process](/assets/apalabrados_flowchart.drawio.svg)
 4. How I feel more comfortable with Python, I looked for a better way to do a Web App using it. I found the more efficient tool was Flask, so I learned from zero how to do it.
 I read a lot of sources, these were the most helpful for me:
