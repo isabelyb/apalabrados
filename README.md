@@ -28,7 +28,7 @@ I read a lot of sources, these were the most helpful for me:
     * [Documentation](https://palletsprojects.com/p/flask/)
     * [Pythonise tutorial](https://pythonise.com/series/learning-flask/flask-application-structure)
     * [python-adv-web-apps](https://python-adv-web-apps.readthedocs.io/en/latest/flask.html)
-4. Made a first version of the App structure. As the _proces data flowchart_ I have to adjust some details in the develop app process. ![app_structure]()
+4. Made a first version of the App structure. As the _proces data flowchart_ I have to adjust some details in the develop app process. ![app_structure](/assets/app.drawio.svg)
 5. Looked for learning about how to connect MongoDB with a Flask App. Some time ago I have learned about some basics from mongo in [Platzi](https://platzi.com/clases/mongodb/).
     [Mongodb](https://docs.mongodb.com/)
     [Pythonbasics tutorial](https://pythonbasics.org/flask-mongodb/)
