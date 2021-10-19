@@ -12,7 +12,7 @@ This Web App is part of challenge of diagnostic in Platzi Master Cohort[8].
 * **Step 1:** go to [Home](https://apalabrados-isabely.herokuapp.com/) and insert and input you want.![home](/assets/home.jpg)
 
 * **Step 2:** When you have submitted an input **Apalabrados** redirect to app [response](https://apalabrados-isabely.herokuapp.com/submit).
-There you can see the result of database that is saved and proceced yhe input according to the data type. ![submit](/assets/submit.jpg)
+There you can see the result of database that is saved and processed the input according to the data type. ![submit](/assets/submit.jpg)
 
 You could go to back to the home and try the times you want!
 
