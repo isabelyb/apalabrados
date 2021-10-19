@@ -68,13 +68,10 @@ I read a lot of sources, these were the most helpful for me:
 3. Install the [Heroku Command Line](https://devcenter.heroku.com/categories/command-line) to perform the App in Heroku.
 4. Made the integration of my GitHub repository [with Heroku](https://devcenter.heroku.com/articles/github-integration).
 
-My Web App was deployed and I felt so happy for this. 
+My Web App was deployed and I felt so happy for this. Apalabrados is my first Web App complet from zero to deploy.
 
 ![deploy](/assets/deploy.jpg) 
         
-This is my first App complet from zero to deploy.
-
-
 Finally I finished to write the README.md file.
 
 [View **Apalabrados** deployment here](https://apalabrados-isabely.herokuapp.com/)
