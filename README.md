@@ -76,6 +76,10 @@ Finally I finished to write the README.md file.
 
 [View **Apalabrados** deployment here](https://apalabrados-isabely.herokuapp.com/)
 
+## Issues
+
+There are some issues. To read go [here](https://github.com/isabelyb/apalabrados/issues).
+
 ##  Instructions to Download
 
 This is a brief guide, You should adapt it to your own software requirements.
