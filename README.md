@@ -49,49 +49,43 @@ I read a lot of sources, these were the most helpful for me:
     6.6. Saved requirements.txt. Update every tool installation: ```pip3 freeze > requirements.txt```
     6.7. Create database in mongodb:
         [mongo_db](/assets/mongo_db.jpg)
-    6.8. Install Flask-PyMongo and conect database with the Web App:
-
-    6.9. Create a Python code to manage data from the user Input with mongo. I used pandas too, to do it.
-        * create clasifier function
-                * make to input is saved in mongodb (without classifier)
-        * get data from mongo db
-        * accumulated numbers
-    * post acumulated in accumulated column !!
-    * post all data in the collection of bd in mongo
-    * Updated get table in html from mongo db
-    * modules
-    * format html
+    6.8. Install Flask-PyMongo and conect database with the Web App.
+    6.9. Create the Python code to manage data from the user Input with Mongodb. I used pandas too, to do it.
+        1. Methods POST and GET to send and get data with Web App from mongodb.
+        2. Create a classifier function to save all data in the right mongo collection according to the datatype.
+        3. Create a function to get updated data from mongo and render in HTML table to show in the Web App. I use [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html) to do it.
+        5. Last details in basic HTML with code to show the information in the Web App. I use the [Jinja Templates](https://jinja.palletsprojects.com/en/3.0.x/templates/) to do this.
 
 
 ## Deploy in [HEROKU](https://www.heroku.com/)
 
-
-
-Cli
-
-
-gunicorn: procfile
-
-runtime: Version Python
+1. Created ```runtime.txt``` file: This is requierement to set the Python version to run the Web App.
+2. Install the web server for Python [gunicorn](https://gunicorn.org/) and created the ```procfile``` file in order to [specify to heroku](https://devcenter.heroku.com/articles/procfile) how to start the App.
+3. Install the [Heroku Command Line](https://devcenter.heroku.com/categories/command-line) to perform the App in Heroku.
+4. Made the integration of my GitHub repository [with Heroku](https://devcenter.heroku.com/articles/github-integration).
 
 My Web App was deployed and I felt so happy for this. 
+        [deploy](/assets/deploy.jpg)
 This is my first App complet from zero to deploy.
 
-Finally i finish to write the README.md file.
+
+Finally I finished to write the README.md file.
 
 [View **Apalabrados** deployment here](https://apalabrados-isabely.herokuapp.com/)
 
 ##  Instructions to Download
 
-1. In the [Aplabrados Repo](https://github.com/isabelyb/apalabrados)
+This is a brief guide, You should adapt it to your own software requirements.
 
-2. Extract
-
-3. Install
-
-4. To run in local:
-
-5. To **deploy in Heroku** go to the website instructions [here](https://devcenter.heroku.com/articles/getting-started-with-python).
+1. In the [Aplabrados Repo](https://github.com/isabelyb/apalabrados), go to download zip file:
+        ![download](/assets/download.jpg)
+2. Extract file.
+3. From command line, in the app root create a virtual enviroment.
+4. Inside **venv** install Web App requirements: ```pip3 install -r requirements.txt```
+5. To run in local: 
+    5.1. Config environment variables from the command line: ```export FLASK_APP=main.py``` and ```export FLASK_DEBUG=1```
+    5.2. Run Flask to try the Web App: ```flask run```
+6. To **deploy in Heroku** go to the website instructions [here](https://devcenter.heroku.com/articles/getting-started-with-python).
 
 
 
